@@ -3,7 +3,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/olliv
 
 local Window = Library:MakeWindow({
     Title = "Vornex Hub | Brookhavem",
-    SubTitle = "Brookhavem",
+    SubTitle = "Brookhavem Version",
     SaveFolder = "vornex.lua"
 })
 
@@ -21,14 +21,8 @@ local Tab6 = Window:MakeTab({"RGB", "brush"})
 local Tab7 = Window:MakeTab({"Music All", "radio"})    
 local Tab8 = Window:MakeTab({"Music", "music"}) 
 local Tab9 = Window:MakeTab({"Troll", "skull"}) 
-local Tab10 = Window:MakeTab({"Lag Server", "bomb"})
 local Tab11 = Window:MakeTab({"Scripts", "scroll"})
 local Tab12 = Window:MakeTab({"Teleportes", "map-pin"})
-
-
-
-
-
 
 TabDiscord:AddDiscordInvite({
     Name = "Vornex Hub",
@@ -163,7 +157,7 @@ end
 Tab2:AddTextBox({
     Name = "Nome do Jogador",
     Description = "Digite parte do nome",
-    PlaceholderText = "ex: lo → Lolyta",
+    PlaceholderText = "Name Player",
     Callback = function(Value)
         local foundPlayer = findPlayerByPartialName(Value)
         if foundPlayer then
@@ -254,7 +248,7 @@ Tab2:AddSlider({
  end)
 
  Tab2:AddButton({
-    Name = "Reset Speed/Gravity/Jumppower.✅",
+    Name = "Reset Speed/Gravity/Jumppower",
     Callback = function()
         -- Resetar Speed
         local player = game.Players.LocalPlayer
@@ -4566,22 +4560,6 @@ Tab9:AddButton({"Parar Tudo", function()
     originalProperties = nil
     showNotification("Tudo Parado", "Todas as funções foram desativadas.", nil)
 end})
-
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------
-                                                   -- === Tab 10: lag server === --
----------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------
-                                               -- === Tab 11: Scripts === --
-----------------------------------------------------------------------------------------------------------------------------------------------
 
 Tab11:AddButton({
     Name = "FE Jerk Off Hub Matrix",
